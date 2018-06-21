@@ -1,0 +1,22 @@
+{
+  "name": "entity/entity",
+  "version": "1.0",
+  "license": "MIT",
+  "description": "Simple and fast entity class implementing magic getters and setters. Easy usage in repository design patterns",
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Entity\\": "src/",
+      "Entity\\Test\\": "test/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.2"
+  },
+  "scripts": {
+    "test": "phpunit --colors=always",
+    "coverage-test": "phpunit --log-junit 'reports/unitreport.xml' --coverage-html 'reports/coverage' --coverage-clover 'reports/coverage/coverage.xml'"
+  }
+}
