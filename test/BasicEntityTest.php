@@ -69,6 +69,13 @@ class BasicEntityTest extends TestCase
         unset($entity['a']);
         $this->assertJsonStringEqualsJsonString(json_encode([]), json_encode($entity));
     }
+
+    public function testToArray(): void
+    {
+        $entity = new BasicEntity(['a' => 'a']);
+
+        $this->assertEquals(['a' => 'a'], $entity->toArray());
+    }
 }
 
 class Item extends BasicEntity

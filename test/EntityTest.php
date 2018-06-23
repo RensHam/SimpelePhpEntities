@@ -131,6 +131,13 @@ class EntityTest extends TestCase
 
         $this->assertJsonStringEqualsJsonString(json_encode([]), json_encode($entity));
     }
+
+    public function testToArray(): void
+    {
+        $entity = new Entity(['a' => 'a']);
+
+        $this->assertEquals(['a' => 'a'], $entity->toArray());
+    }
 }
 
 /**
