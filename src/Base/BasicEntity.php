@@ -42,6 +42,19 @@ abstract class BasicEntity implements EntityInterface
      */
     final public function jsonSerialize()
     {
+        return $this->values();
+    }
+
+    /**
+     * @inheritdoc
+     */
+    final public function toArray(): array
+    {
+        return $this->values();
+    }
+
+    private function values(): array
+    {
         $data = $this->values;
 
         if (count($this->hidden)) {
