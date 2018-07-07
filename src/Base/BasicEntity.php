@@ -11,6 +11,11 @@ abstract class BasicEntity implements EntityInterface
 {
     use BaseEntity;
 
+    final public function __construct(array $values = [])
+    {
+        $this->init($values);
+    }
+
     /**
      * @inheritdoc
      */
