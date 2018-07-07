@@ -12,6 +12,11 @@ abstract class Entity implements EntityInterface
 {
     use BaseEntity;
 
+    public function __construct(array $values = [])
+    {
+        $this->init($values);
+    }
+
     /**
      * @param $name
      * @return mixed

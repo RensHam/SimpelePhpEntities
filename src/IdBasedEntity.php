@@ -9,17 +9,14 @@ namespace Entity;
  * Usage
  * ```php
  *
- * $item = new Entity(['fieldA' => 'value']);
+ * $item = new Entity(1, ['fieldA' => 'value']);
  *
  * echo $item->fieldA;
  * echo $item['fieldA'];
  *
  * ```
  */
-class Entity extends \Entity\Base\Entity
+class IdBasedEntity extends \Entity\Base\IdBasedEntity
 {
-    final public function __construct(array $settings = [])
-    {
-        parent::__construct($settings);
-    }
+
 }
