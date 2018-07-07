@@ -78,7 +78,7 @@ class IdBasedEntityTest extends TestCase
             'c' => -1,
         ]);
 
-        $item->setHidden(['id', 'a']);
+        $item->setHidden(['a']);
 
         $this->assertJsonStringEqualsJsonString(json_encode([
             'b' => 0,

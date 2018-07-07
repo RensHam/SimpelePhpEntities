@@ -14,17 +14,4 @@ abstract class IdBasedEntity extends Entity
         $this->id = $id;
         parent::__construct($settings);
     }
-
-    /**
-     * @return int
-     */
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    protected function initHidden(): array
-    {
-        return ['id'];
-    }
 }
