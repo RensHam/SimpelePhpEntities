@@ -18,5 +18,8 @@ namespace Entity;
  */
 class BasicEntity extends \Entity\Base\BasicEntity
 {
-
+    final public function __construct(array $settings = [])
+    {
+        parent::__construct($settings);
+    }
 }
