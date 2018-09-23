@@ -1,6 +1,6 @@
 {
   "name": "entity/entity",
-  "version": "2.3",
+  "version": "2.4",
   "license": "MIT",
   "description": "Simple and fast entity class implementing magic getters and setters. Easy usage in repository design patterns",
   "require": {
