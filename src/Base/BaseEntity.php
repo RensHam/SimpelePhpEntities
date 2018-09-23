@@ -24,7 +24,7 @@ trait BaseEntity
      */
     protected $visible = [];
 
-    final protected function init(array $values = [])
+    final protected function init(array $values = []): void
     {
         $this->values = $values;
         $this->initialize();
